@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    imperium &raquo; \Imperium\Database\DB
+    <title>    imperium &raquo; \Imperium\Http\Request
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -119,51 +119,69 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                                                                            <li class="method public">
-        <a href="#method_dev" title="dev :: Call the constructor with the development environment information.">
-            <span class="description">Call the constructor with the development environment information.</span><pre>dev</pre>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Initialize a new request">
+            <span class="description">Initialize a new request</span><pre>__construct</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_exec" title="exec :: Execute a query sql.">
-            <span class="description">Execute a query sql.</span><pre>exec</pre>
+        <a href="#method_args" title="args :: Return an instance of route args container.">
+            <span class="description">Return an instance of route args container.</span><pre>args</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_get" title="get :: Execute the query and return the results in an array.">
-            <span class="description">Execute the query and return the results in an array.</span><pre>get</pre>
+        <a href="#method_cookie" title="cookie :: Return an instance of the $_COOKIE container">
+            <span class="description">Return an instance of the $_COOKIE container</span><pre>cookie</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_mysql" title="mysql :: Check if the current driver used is mysql.">
-            <span class="description">Check if the current driver used is mysql.</span><pre>mysql</pre>
+        <a href="#method_file" title="file :: Return an instance of $_FILES container">
+            <span class="description">Return an instance of $_FILES container</span><pre>file</pre>
         </a>
     </li>
 
                                                                                                                                                                 <li class="method public">
-        <a href="#method_postgresql" title="postgresql :: Check if the current driver used is postgresql.">
-            <span class="description">Check if the current driver used is postgresql.</span><pre>postgresql</pre>
+        <a href="#method_ip" title="ip :: Get the connected user ip">
+            <span class="description">Get the connected user ip</span><pre>ip</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_prod" title="prod :: Call the constructor with the production environment information.">
-            <span class="description">Call the constructor with the production environment information.</span><pre>prod</pre>
+        <a href="#method_local" title="local :: Check if the request is in local.">
+            <span class="description">Check if the request is in local.</span><pre>local</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_sqlite" title="sqlite :: Check if the current driver used is sqlite.">
-            <span class="description">Check if the current driver used is sqlite.</span><pre>sqlite</pre>
+        <a href="#method_make" title="make :: Creates a new request with values from PHP&#039;s super globals.">
+            <span class="description">Creates a new request with values from PHP&#039;s super globals.</span><pre>make</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_test" title="test :: Call the constructor with the test environment information.">
-            <span class="description">Call the constructor with the test environment information.</span><pre>test</pre>
+        <a href="#method_query" title="query :: Return an instance of $_GET container.">
+            <span class="description">Return an instance of $_GET container.</span><pre>query</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_request" title="request :: Return an instance of the $_POST container.">
+            <span class="description">Return an instance of the $_POST container.</span><pre>request</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_secure" title="secure :: Check if the request is secure.">
+            <span class="description">Check if the request is secure.</span><pre>secure</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_server" title="server :: Return an instance of the $_SERVER container.">
+            <span class="description">Return an instance of the $_SERVER container.</span><pre>server</pre>
         </a>
     </li>
 
@@ -171,21 +189,16 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                            <li class="method private">
-                            <a href="#method___construct" title="__construct :: Build a new instance">
-                                <span class="description">Build a new instance</span><pre>__construct</pre>
+                                                                                                                                                                                                                            <li class="method private">
+                            <a href="#method_initialize" title="initialize :: Initialize the correct object of a request type.">
+                                <span class="description">Initialize the correct object of a request type.</span><pre>initialize</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                <li class="method private">
-                            <a href="#method_pdo" title="pdo :: Build the pdo instance.">
-                                <span class="description">Build the pdo instance.</span><pre>pdo</pre>
-                            </a>
-                        </li>
-                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -199,13 +212,13 @@
 
         <div class="span8">
             <div class="element class">
-                <h1>DB</h1>
+                <h1>Request</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description">Represent a connection between php code and a database.</p>
+                <p class="short_description">Represent an user request on the website.</p>
                 <div class="details">
                     <div class="long_description">
-                        <p>Groups off all method useful to execute queries.</p>
+                        <p>This package contains all useful methods to interact with all values.</p>
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
@@ -223,7 +236,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>Imperium\Database\DB</p>
+                                                                                <p>Imperium\Http\Request</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -239,16 +252,16 @@
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
-                        <div class="element clickable method private  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-                            <h2>Build a new instance</h2>
-                            <pre>__construct(string $driver, string $base, string $username, string $password, string $host = &#039;localhost&#039;) </pre>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Initialize a new request</h2>
+                            <pre>__construct(array $request = array(), array $query = array(), array $cookies = array(), array $files = array(), array $server = array(), array $router_args = array()) </pre>
                             <div class="labels">
-                                                                                                <span class="label">final</span>                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"><p>Initialize required values</p></div>
+                                    <div class="long_description"></div>
 
                                     <table class="table">
                                                                                     <tr>
@@ -262,36 +275,40 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$driver</h4>
-                                                <code>string</code><p><p>The driver to use</p></p>
+                                                <h4>$request</h4>
+                                                <code>array</code><p><p>The $_POST values.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$base</h4>
-                                                <code>string</code><p><p>The database name</p></p>
+                                                <h4>$query</h4>
+                                                <code>array</code><p><p>The $_GET values.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$username</h4>
-                                                <code>string</code><p><p>The database username</p></p>
+                                                <h4>$cookies</h4>
+                                                <code>array</code><p><p>The $_COOKIE values.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$password</h4>
-                                                <code>string</code><p><p>The database password</p></p>
+                                                <h4>$files</h4>
+                                                <code>array</code><p><p>The $_FILES values.</p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$host</h4>
-                                                <code>string</code><p><p>The database hostname</p></p>
+                                                <h4>$server</h4>
+                                                <code>array</code><p><p>The $_SERVER values.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$router_args</h4>
+                                                <code>array</code><p><p>The router args for a route.</p></p>
                                             </div>
                                                                             
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_dev"></a>
-                        <div class="element clickable method public  method_dev" data-toggle="collapse" data-target=".method_dev .collapse">
-                            <h2>Call the constructor with the development environment information.</h2>
-                            <pre>dev() : \Imperium\Database\DB</pre>
+                                            <a id="method_args"></a>
+                        <div class="element clickable method public  method_args" data-toggle="collapse" data-target=".method_args .collapse">
+                            <h2>Return an instance of route args container.</h2>
+                            <pre>args() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
-                                                                <span class="label">static</span>                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -310,128 +327,210 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/Imperium.Database.DB.html">\Imperium\Database\DB</a></code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_exec"></a>
-                        <div class="element clickable method public  method_exec" data-toggle="collapse" data-target=".method_exec .collapse">
-                            <h2>Execute a query sql.</h2>
-                            <pre>exec(string $sql, array $args = array()) : boolean</pre>
+                                            <a id="method_cookie"></a>
+                        <div class="element clickable method public  method_cookie" data-toggle="collapse" data-target=".method_cookie .collapse">
+                            <h2>Return an instance of the $_COOKIE container</h2>
+                            <pre>cookie() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
                             
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"><p>Return true on success of false on failure.</p></div>
+                                    <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                                                            <tr>
-                                                <th>Throws</th>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
                                                 <td>
-                                                    <dl>
-                                                                                                            <dt>\Imperium\Exception\Kedavra</dt>
-                                                        <dd></dd>
-                                                                                                                                                            </dl>
-                                                </td>
+                                                                                                    </td>
                                             </tr>
-                                                                            </table>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_file"></a>
+                        <div class="element clickable method public  method_file" data-toggle="collapse" data-target=".method_file .collapse">
+                            <h2>Return an instance of $_FILES container</h2>
+                            <pre>file() : \Imperium\Http\Parameters\UploadedFile</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Http.Parameters.UploadedFile.html">\Imperium\Http\Parameters\UploadedFile</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_initialize"></a>
+                        <div class="element clickable method private  method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+                            <h2>Initialize the correct object of a request type.</h2>
+                            <pre>initialize(array $query, array $request, array $cookies, array $files, array $server, array $router_args) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$sql</h4>
-                                                <code>string</code><p><p>The query to execute</p></p>
+                                                <h4>$query</h4>
+                                                <code>array</code><p></p>
                                             </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$request</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cookies</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$files</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$server</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$router_args</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_ip"></a>
+                        <div class="element clickable method public  method_ip" data-toggle="collapse" data-target=".method_ip .collapse">
+                            <h2>Get the connected user ip</h2>
+                            <pre>ip() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_local"></a>
+                        <div class="element clickable method public  method_local" data-toggle="collapse" data-target=".method_local .collapse">
+                            <h2>Check if the request is in local.</h2>
+                            <pre>local() : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if is in local or false on production.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_make"></a>
+                        <div class="element clickable method public  method_make" data-toggle="collapse" data-target=".method_make .collapse">
+                            <h2>Creates a new request with values from PHP&#039;s super globals.</h2>
+                            <pre>make(\Imperium\Http\array&lt;mixed&gt; $args = array()) : \Imperium\Http\Request</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$args</h4>
-                                                <code>array</code><p><p>The query args</p></p>
+                                                <code>\Imperium\Http\array<mixed></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>boolean</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Request.html">\Imperium\Http\Request</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_get"></a>
-                        <div class="element clickable method public  method_get" data-toggle="collapse" data-target=".method_get .collapse">
-                            <h2>Execute the query and return the results in an array.</h2>
-                            <pre>get(string $sql, array $args = array(), integer $output_mode = \PDO::FETCH_OBJ) : array</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                            <tr>
-                                                <th>Throws</th>
-                                                <td>
-                                                    <dl>
-                                                                                                            <dt>\Imperium\Exception\Kedavra</dt>
-                                                        <dd></dd>
-                                                                                                                                                            </dl>
-                                                </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$sql</h4>
-                                                <code>string</code><p><p>The query to execute</p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$args</h4>
-                                                <code>array</code><p><p>The query arguments</p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
-                                                <h4>$output_mode</h4>
-                                                <code>integer</code><p><p>The output style</p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>array</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_mysql"></a>
-                        <div class="element clickable method public  method_mysql" data-toggle="collapse" data-target=".method_mysql .collapse">
-                            <h2>Check if the current driver used is mysql.</h2>
-                            <pre>mysql() : boolean</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Return true if mysql is used or return false.</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                                                    </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_pdo"></a>
-                        <div class="element clickable method private  method_pdo" data-toggle="collapse" data-target=".method_pdo .collapse">
-                            <h2>Build the pdo instance.</h2>
-                            <pre>pdo() : \PDO</pre>
+                                            <a id="method_query"></a>
+                        <div class="element clickable method public  method_query" data-toggle="collapse" data-target=".method_query .collapse">
+                            <h2>Return an instance of $_GET container.</h2>
+                            <pre>query() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -452,46 +551,17 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>\PDO</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_postgresql"></a>
-                        <div class="element clickable method public  method_postgresql" data-toggle="collapse" data-target=".method_postgresql .collapse">
-                            <h2>Check if the current driver used is postgresql.</h2>
-                            <pre>postgresql() : boolean</pre>
+                                            <a id="method_request"></a>
+                        <div class="element clickable method public  method_request" data-toggle="collapse" data-target=".method_request .collapse">
+                            <h2>Return an instance of the $_POST container.</h2>
+                            <pre>request() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Return true if postgresql is used or return false.</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                                                    </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_prod"></a>
-                        <div class="element clickable method public  method_prod" data-toggle="collapse" data-target=".method_prod .collapse">
-                            <h2>Call the constructor with the production environment information.</h2>
-                            <pre>prod() : \Imperium\Database\DB</pre>
-                            <div class="labels">
-                                                                <span class="label">static</span>                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -510,22 +580,22 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/Imperium.Database.DB.html">\Imperium\Database\DB</a></code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_sqlite"></a>
-                        <div class="element clickable method public  method_sqlite" data-toggle="collapse" data-target=".method_sqlite .collapse">
-                            <h2>Check if the current driver used is sqlite.</h2>
-                            <pre>sqlite() : boolean</pre>
+                                            <a id="method_secure"></a>
+                        <div class="element clickable method public  method_secure" data-toggle="collapse" data-target=".method_secure .collapse">
+                            <h2>Check if the request is secure.</h2>
+                            <pre>secure() : boolean</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
                             
                             <div class="row collapse">
                                 <div class="detail-description">
-                                    <div class="long_description"><p>Return true if sqlite is used or return false.</p></div>
+                                    <div class="long_description"><p>Return true if the request is secure or false on insecure.</p></div>
 
                                     <table class="table">
                                                                                     <tr>
@@ -544,12 +614,12 @@
                             </div>
 
                         </div>
-                                            <a id="method_test"></a>
-                        <div class="element clickable method public  method_test" data-toggle="collapse" data-target=".method_test .collapse">
-                            <h2>Call the constructor with the test environment information.</h2>
-                            <pre>test() : \Imperium\Database\DB</pre>
+                                            <a id="method_server"></a>
+                        <div class="element clickable method public  method_server" data-toggle="collapse" data-target=".method_server .collapse">
+                            <h2>Return an instance of the $_SERVER container.</h2>
+                            <pre>server() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
-                                                                <span class="label">static</span>                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -568,7 +638,7 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code><a href="../classes/Imperium.Database.DB.html">\Imperium\Database\DB</a></code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
@@ -576,15 +646,15 @@
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_driver"> </a>
-                            <div class="element clickable property  public property_driver" data-toggle="collapse" data-target=".property_driver .collapse">
-                                <h2>driver</h2>
-                                <pre>driver : string</pre>
+                                                    <a id="property_query"> </a>
+                            <div class="element clickable property  public property_query" data-toggle="collapse" data-target=".property_query .collapse">
+                                <h2>query</h2>
+                                <pre>query : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The current pdo driver value</p></div>
+                                        <div class="long_description"><p>The container for $_GET values.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -597,19 +667,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_base"> </a>
-                            <div class="element clickable property  public property_base" data-toggle="collapse" data-target=".property_base .collapse">
-                                <h2>base</h2>
-                                <pre>base : string</pre>
+                                                    <a id="property_request"> </a>
+                            <div class="element clickable property  public property_request" data-toggle="collapse" data-target=".property_request .collapse">
+                                <h2>request</h2>
+                                <pre>request : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The current pdo database value</p></div>
+                                        <div class="long_description"><p>The container for $_POST values.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -622,19 +692,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_username"> </a>
-                            <div class="element clickable property  public property_username" data-toggle="collapse" data-target=".property_username .collapse">
-                                <h2>username</h2>
-                                <pre>username : string</pre>
+                                                    <a id="property_cookie"> </a>
+                            <div class="element clickable property  public property_cookie" data-toggle="collapse" data-target=".property_cookie .collapse">
+                                <h2>cookie</h2>
+                                <pre>cookie : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The current pdo username value</p></div>
+                                        <div class="long_description"><p>The container for $_COOKIE values</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -647,19 +717,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_password"> </a>
-                            <div class="element clickable property  public property_password" data-toggle="collapse" data-target=".property_password .collapse">
-                                <h2>password</h2>
-                                <pre>password : string</pre>
+                                                    <a id="property_server"> </a>
+                            <div class="element clickable property  public property_server" data-toggle="collapse" data-target=".property_server .collapse">
+                                <h2>server</h2>
+                                <pre>server : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The current pdo password value</p></div>
+                                        <div class="long_description"><p>The container for $_SERVER values.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -672,19 +742,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_host"> </a>
-                            <div class="element clickable property  public property_host" data-toggle="collapse" data-target=".property_host .collapse">
-                                <h2>host</h2>
-                                <pre>host : string</pre>
+                                                    <a id="property_args"> </a>
+                            <div class="element clickable property  public property_args" data-toggle="collapse" data-target=".property_args .collapse">
+                                <h2>args</h2>
+                                <pre>args : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The current pdo hostname value</p></div>
+                                        <div class="long_description"><p>The container for the router params values.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -697,19 +767,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>string</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_pdo"> </a>
-                            <div class="element clickable property  public property_pdo" data-toggle="collapse" data-target=".property_pdo .collapse">
-                                <h2>pdo</h2>
-                                <pre>pdo : \Imperium\Database\?PDO</pre>
+                                                    <a id="property_file"> </a>
+                            <div class="element clickable property  public property_file" data-toggle="collapse" data-target=".property_file .collapse">
+                                <h2>file</h2>
+                                <pre>file : \Imperium\Http\Parameters\UploadedFile</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The pdo instance</p></div>
+                                        <div class="long_description"><p>The container for the uploaded files.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -722,20 +792,20 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>\Imperium\Database\?PDO</code>
+                                            <code>\Imperium\Http\Parameters\UploadedFile</code>
                                                                             </div>
                                 </div>
                             </div>
                                                             </div>
             </div>
-            <a id="\Imperium\Database\DB"></a>
+            <a id="\Imperium\Http\Request"></a>
             <ul class="breadcrumb">
                 <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
                     
     
-    <li><span class="divider">\</span><a href="../namespaces/Imperium.Database.html">Database</a></li>
+    <li><span class="divider">\</span><a href="../namespaces/Imperium.Http.html">Http</a></li>
 
-                <li class="active"><span class="divider">\</span><a href="../classes/Imperium.Database.DB.html">DB</a></li>
+                <li class="active"><span class="divider">\</span><a href="../classes/Imperium.Http.Request.html">Request</a></li>
             </ul>
         </div>
     </div>
