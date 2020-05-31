@@ -1,0 +1,13 @@
+{
+    "name": "imperium/doc",
+    "description": "The official imperium documentation",
+    "type": "project",
+    "license": "GPL-3.0-or-later",	
+    "authors": [
+        {
+            "name": "Willy Micieli",
+            "email": "fumseckworld@fumseck.eu"
+        }
+    ],
+    "require": {}
+}

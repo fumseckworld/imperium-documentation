@@ -1,4 +1,4 @@
 # Install 
 
-`composer create-project shaolin/doc documentation && cd docuementation && php -S localhost:3000`
+`composer create-project imperium/doc imperium && cd imperium && php -S localhost:3000`
 
