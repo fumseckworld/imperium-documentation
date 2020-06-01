@@ -126,8 +126,56 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_all" title="all :: Return all values inside the container.">
-            <span class="description">Return all values inside the container.</span><pre>all</pre>
+        <a href="#method_add" title="add :: Add new content in the parameters.">
+            <span class="description">Add new content in the parameters.</span><pre>add</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_all" title="all :: Return all parameters.">
+            <span class="description">Return all parameters.</span><pre>all</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_alnum" title="alnum :: Get the the alphabetic characters and digits of the parameter value.">
+            <span class="description">Get the the alphabetic characters and digits of the parameter value.</span><pre>alnum</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_alpha" title="alpha :: Get the alphabetic characters of the parameter value.">
+            <span class="description">Get the alphabetic characters of the parameter value.</span><pre>alpha</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_bool" title="bool :: Return the parameter value converted to boolean.">
+            <span class="description">Return the parameter value converted to boolean.</span><pre>bool</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_count" title="count :: Returns the number of parameters.">
+            <span class="description">Returns the number of parameters.</span><pre>count</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_destroy" title="destroy :: Destroy a parameters by this key.">
+            <span class="description">Destroy a parameters by this key.</span><pre>destroy</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_digits" title="digits :: Get the digits of a parameter value.">
+            <span class="description">Get the digits of a parameter value.</span><pre>digits</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_filter" title="filter :: Filter a key">
+            <span class="description">Filter a key</span><pre>filter</pre>
         </a>
     </li>
 
@@ -137,15 +185,51 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_getIterator" title="getIterator :: Returns an iterator for parameters.">
+            <span class="description">Returns an iterator for parameters.</span><pre>getIterator</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_has" title="has :: Check if a key has been define.">
+            <span class="description">Check if a key has been define.</span><pre>has</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_int" title="int :: Return the parameter value converted in an integer.">
+            <span class="description">Return the parameter value converted in an integer.</span><pre>int</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_keys" title="keys :: Get all parameter keys">
+            <span class="description">Get all parameter keys</span><pre>keys</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_set" title="set :: Set a value for a specific key.">
+            <span class="description">Set a value for a specific key.</span><pre>set</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_values" title="values :: Get all parameter values">
+            <span class="description">Get all parameter values</span><pre>values</pre>
+        </a>
+    </li>
+
                                                 </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -161,7 +245,8 @@
             <div class="element class">
                 <h1>Bag</h1>
                 <small style="display: block; text-align: right">
-                                                        </small>
+                                                                Implements \IteratorAggregate, \Countable
+                                    </small>
                 <p class="short_description">Represent the content of a type of request.</p>
                 <div class="details">
                     <div class="long_description">
@@ -201,7 +286,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Bag constructor.</h2>
-                            <pre>__construct(\Imperium\Http\Parameters\array&lt;mixed&gt; $data) </pre>
+                            <pre>__construct(array $data) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -223,16 +308,43 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$data</h4>
-                                                <code>\Imperium\Http\Parameters\array<mixed></code><p></p>
+                                                <code>array</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
                             </div>
 
                         </div>
+                                            <a id="method_add"></a>
+                        <div class="element clickable method public  method_add" data-toggle="collapse" data-target=".method_add .collapse">
+                            <h2>Add new content in the parameters.</h2>
+                            <pre>add(array $parameters = array()) : \Imperium\Http\Parameters\Bag</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$parameters</h4>
+                                                <code>array</code><p><p>The parameter to add.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_all"></a>
                         <div class="element clickable method public  method_all" data-toggle="collapse" data-target=".method_all .collapse">
-                            <h2>Return all values inside the container.</h2>
+                            <h2>Return all parameters.</h2>
                             <pre>all() : array</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
@@ -255,6 +367,225 @@
                                     
                                                                             <h3>Response</h3>
                                         <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_alnum"></a>
+                        <div class="element clickable method public  method_alnum" data-toggle="collapse" data-target=".method_alnum .collapse">
+                            <h2>Get the the alphabetic characters and digits of the parameter value.</h2>
+                            <pre>alnum(string $key, string $default = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The parameter key</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>string</code><p><p>The default parameter value</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_alpha"></a>
+                        <div class="element clickable method public  method_alpha" data-toggle="collapse" data-target=".method_alpha .collapse">
+                            <h2>Get the alphabetic characters of the parameter value.</h2>
+                            <pre>alpha(string $key, string $default = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The parameter key</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>string</code><p><p>The parameter default value</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_bool"></a>
+                        <div class="element clickable method public  method_bool" data-toggle="collapse" data-target=".method_bool .collapse">
+                            <h2>Return the parameter value converted to boolean.</h2>
+                            <pre>bool(string $key, boolean $default = false) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The parameter key.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>boolean</code><p><p>The default value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_count"></a>
+                        <div class="element clickable method public  method_count" data-toggle="collapse" data-target=".method_count .collapse">
+                            <h2>Returns the number of parameters.</h2>
+                            <pre>count() : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>The number of parameters.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_destroy"></a>
+                        <div class="element clickable method public  method_destroy" data-toggle="collapse" data-target=".method_destroy .collapse">
+                            <h2>Destroy a parameters by this key.</h2>
+                            <pre>destroy(string $key) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if value has been destroyed or false on failure.</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The bag key to remove.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_digits"></a>
+                        <div class="element clickable method public  method_digits" data-toggle="collapse" data-target=".method_digits .collapse">
+                            <h2>Get the digits of a parameter value.</h2>
+                            <pre>digits(string $key, string $default = &#039;&#039;) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The parameter key</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>string</code><p><p>The parameter default value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_filter"></a>
+                        <div class="element clickable method public  method_filter" data-toggle="collapse" data-target=".method_filter .collapse">
+                            <h2>Filter a key</h2>
+                            <pre>filter(string $key, mixed $default = null, integer $filter = FILTER_DEFAULT, array $options = array()) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The parameter key to filter.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>mixed</code><p><p>The default parameter value.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filter</h4>
+                                                <code>integer</code><p><p>The filter constant.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code>array</code><p><p>The filter option.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p></p>
                                                                     </div>
                             </div>
 
@@ -286,6 +617,182 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code>mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getIterator"></a>
+                        <div class="element clickable method public  method_getIterator" data-toggle="collapse" data-target=".method_getIterator .collapse">
+                            <h2>Returns an iterator for parameters.</h2>
+                            <pre>getIterator() : \ArrayIterator</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\ArrayIterator</code><p><p>An ArrayIterator instance.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_has"></a>
+                        <div class="element clickable method public  method_has" data-toggle="collapse" data-target=".method_has .collapse">
+                            <h2>Check if a key has been define.</h2>
+                            <pre>has(string $key) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>return true if exist or false on not exist.</p></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_int"></a>
+                        <div class="element clickable method public  method_int" data-toggle="collapse" data-target=".method_int .collapse">
+                            <h2>Return the parameter value converted in an integer.</h2>
+                            <pre>int(string $key, integer $default) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The parameter key.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$default</h4>
+                                                <code>integer</code><p><p>The default value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_keys"></a>
+                        <div class="element clickable method public  method_keys" data-toggle="collapse" data-target=".method_keys .collapse">
+                            <h2>Get all parameter keys</h2>
+                            <pre>keys() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_set"></a>
+                        <div class="element clickable method public  method_set" data-toggle="collapse" data-target=".method_set .collapse">
+                            <h2>Set a value for a specific key.</h2>
+                            <pre>set(string $key, mixed $value) : \Imperium\Http\Parameters\Bag</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>string</code><p><p>The bag key.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>The bag value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_values"></a>
+                        <div class="element clickable method public  method_values" data-toggle="collapse" data-target=".method_values .collapse">
+                            <h2>Get all parameter values</h2>
+                            <pre>values() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
                                                                     </div>
                             </div>
 
@@ -338,7 +845,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 31 May 2020 20:52:41 +0000.<br/>
+            generated on Mon, 01 Jun 2020 11:36:04 +0000.<br/>
     </footer>
     </body>
 </html>
