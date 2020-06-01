@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    imperium &raquo; \Imperium\Http\Parameters\UploadedFile
+    <title>    imperium &raquo; \Imperium\Http\Request\Request
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -120,44 +120,68 @@
             <i class="icon-custom icon-method"></i> Methods
             <ul>
                                                                                                     <li class="method public">
-        <a href="#method___construct" title="__construct :: Init and check all values.">
-            <span class="description">Init and check all values.</span><pre>__construct</pre>
+        <a href="#method___construct" title="__construct :: Initialize a new request">
+            <span class="description">Initialize a new request</span><pre>__construct</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_all" title="all :: Return all valid uploaded files.">
-            <span class="description">Return all valid uploaded files.</span><pre>all</pre>
+        <a href="#method_args" title="args :: Return an instance of route args container.">
+            <span class="description">Return an instance of route args container.</span><pre>args</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_errors" title="errors :: Get all uploaded files errors values">
-            <span class="description">Get all uploaded files errors values</span><pre>errors</pre>
+        <a href="#method_cookie" title="cookie :: Return an instance of the $_COOKIE container">
+            <span class="description">Return an instance of the $_COOKIE container</span><pre>cookie</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_move" title="move :: Move the all valid uploaded file at the path">
-            <span class="description">Move the all valid uploaded file at the path</span><pre>move</pre>
+        <a href="#method_files" title="files :: Return an instance of $_FILES container">
+            <span class="description">Return an instance of $_FILES container</span><pre>files</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_ip" title="ip :: Get the connected user ip">
+            <span class="description">Get the connected user ip</span><pre>ip</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_ok" title="ok :: Check the uploaded files status.">
-            <span class="description">Check the uploaded files status.</span><pre>ok</pre>
+        <a href="#method_local" title="local :: Check if the request is in local.">
+            <span class="description">Check if the request is in local.</span><pre>local</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_sizes" title="sizes :: Return all valid uploaded files sizes.">
-            <span class="description">Return all valid uploaded files sizes.</span><pre>sizes</pre>
+        <a href="#method_make" title="make :: Creates a new request with values from PHP&#039;s super globals.">
+            <span class="description">Creates a new request with values from PHP&#039;s super globals.</span><pre>make</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_types" title="types :: Return all valid uploaded files type.">
-            <span class="description">Return all valid uploaded files type.</span><pre>types</pre>
+        <a href="#method_query" title="query :: Return an instance of $_GET container.">
+            <span class="description">Return an instance of $_GET container.</span><pre>query</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_request" title="request :: Return an instance of the $_POST container.">
+            <span class="description">Return an instance of the $_POST container.</span><pre>request</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_secure" title="secure :: Check if the request is secure.">
+            <span class="description">Check if the request is secure.</span><pre>secure</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_server" title="server :: Return an instance of the $_SERVER container.">
+            <span class="description">Return an instance of the $_SERVER container.</span><pre>server</pre>
         </a>
     </li>
 
@@ -165,11 +189,16 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                            <li class="method private">
+                            <a href="#method_initialize" title="initialize :: Initialize the correct object of a request type.">
+                                <span class="description">Initialize the correct object of a request type.</span><pre>initialize</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -183,13 +212,13 @@
 
         <div class="span8">
             <div class="element class">
-                <h1>UploadedFile</h1>
+                <h1>Request</h1>
                 <small style="display: block; text-align: right">
                                                         </small>
-                <p class="short_description">Represent all uploaded files.</p>
+                <p class="short_description">Represent an user request on the website.</p>
                 <div class="details">
                     <div class="long_description">
-                        <p>This package contains all methods useful to manage $_FILES contents.</p>
+                        <p>This package contains all useful methods to interact with all values.</p>
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
@@ -207,7 +236,7 @@
                                                                             </th>
                                     <td>
                                                                                     
-                                                                                <p>Imperium\Http\Parameters\UploadedFile</p>
+                                                                                <p>Imperium\Http\Request</p>
                                     </td>
                                 </tr>
                                                                                                                 <tr>
@@ -224,8 +253,8 @@
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-                            <h2>Init and check all values.</h2>
-                            <pre>__construct(array $data) </pre>
+                            <h2>Initialize a new request</h2>
+                            <pre>__construct(array $request = array(), array $query = array(), array $cookies = array(), array $files = array(), array $server = array(), array $router_args = array()) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -246,18 +275,38 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$data</h4>
-                                                <code>array</code><p><p>All uploaded files values.</p></p>
+                                                <h4>$request</h4>
+                                                <code>array</code><p><p>The $_POST values.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$query</h4>
+                                                <code>array</code><p><p>The $_GET values.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cookies</h4>
+                                                <code>array</code><p><p>The $_COOKIE values.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$files</h4>
+                                                <code>array</code><p><p>The $_FILES values.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$server</h4>
+                                                <code>array</code><p><p>The $_SERVER values.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$router_args</h4>
+                                                <code>array</code><p><p>The router args for a route.</p></p>
                                             </div>
                                                                             
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_all"></a>
-                        <div class="element clickable method public  method_all" data-toggle="collapse" data-target=".method_all .collapse">
-                            <h2>Return all valid uploaded files.</h2>
-                            <pre>all() : array</pre>
+                                            <a id="method_args"></a>
+                        <div class="element clickable method public  method_args" data-toggle="collapse" data-target=".method_args .collapse">
+                            <h2>Return an instance of route args container.</h2>
+                            <pre>args() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -278,15 +327,15 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>array</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_errors"></a>
-                        <div class="element clickable method public  method_errors" data-toggle="collapse" data-target=".method_errors .collapse">
-                            <h2>Get all uploaded files errors values</h2>
-                            <pre>errors() : array</pre>
+                                            <a id="method_cookie"></a>
+                        <div class="element clickable method public  method_cookie" data-toggle="collapse" data-target=".method_cookie .collapse">
+                            <h2>Return an instance of the $_COOKIE container</h2>
+                            <pre>cookie() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -307,17 +356,156 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>array</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_move"></a>
-                        <div class="element clickable method public  method_move" data-toggle="collapse" data-target=".method_move .collapse">
-                            <h2>Move the all valid uploaded file at the path</h2>
-                            <pre>move(string $path) : boolean</pre>
+                                            <a id="method_files"></a>
+                        <div class="element clickable method public  method_files" data-toggle="collapse" data-target=".method_files .collapse">
+                            <h2>Return an instance of $_FILES container</h2>
+                            <pre>files() : \Imperium\Http\Parameters\UploadedFile</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Http.Parameters.UploadedFile.html">\Imperium\Http\Parameters\UploadedFile</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_initialize"></a>
+                        <div class="element clickable method private  method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+                            <h2>Initialize the correct object of a request type.</h2>
+                            <pre>initialize(array $query, array $request, array $cookies, array $files, array $server, array $router_args) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$query</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$request</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cookies</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$files</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$server</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$router_args</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_ip"></a>
+                        <div class="element clickable method public  method_ip" data-toggle="collapse" data-target=".method_ip .collapse">
+                            <h2>Get the connected user ip</h2>
+                            <pre>ip() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_local"></a>
+                        <div class="element clickable method public  method_local" data-toggle="collapse" data-target=".method_local .collapse">
+                            <h2>Check if the request is in local.</h2>
+                            <pre>local() : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if is in local or false on production.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_make"></a>
+                        <div class="element clickable method public  method_make" data-toggle="collapse" data-target=".method_make .collapse">
+                            <h2>Creates a new request with values from PHP&#039;s super globals.</h2>
+                            <pre>make(\Imperium\Http\Request\array&lt;mixed&gt; $args = array()) : \Imperium\Http\Request\Request</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -329,49 +517,20 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$path</h4>
-                                                <code>string</code><p><p>The directory to save uploaded files.</p></p>
+                                                <h4>$args</h4>
+                                                <code>\Imperium\Http\Request\array<mixed></code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>boolean</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Request.Request.html">\Imperium\Http\Request\Request</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_ok"></a>
-                        <div class="element clickable method public  method_ok" data-toggle="collapse" data-target=".method_ok .collapse">
-                            <h2>Check the uploaded files status.</h2>
-                            <pre>ok() : boolean</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"><p>Return true on success or false on failure.</p></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                                                    </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>boolean</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_sizes"></a>
-                        <div class="element clickable method public  method_sizes" data-toggle="collapse" data-target=".method_sizes .collapse">
-                            <h2>Return all valid uploaded files sizes.</h2>
-                            <pre>sizes() : array</pre>
+                                            <a id="method_query"></a>
+                        <div class="element clickable method public  method_query" data-toggle="collapse" data-target=".method_query .collapse">
+                            <h2>Return an instance of $_GET container.</h2>
+                            <pre>query() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -392,15 +551,15 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>array</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
                         </div>
-                                            <a id="method_types"></a>
-                        <div class="element clickable method public  method_types" data-toggle="collapse" data-target=".method_types .collapse">
-                            <h2>Return all valid uploaded files type.</h2>
-                            <pre>types() : array</pre>
+                                            <a id="method_request"></a>
+                        <div class="element clickable method public  method_request" data-toggle="collapse" data-target=".method_request .collapse">
+                            <h2>Return an instance of the $_POST container.</h2>
+                            <pre>request() : \Imperium\Http\Parameters\Bag</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -421,7 +580,65 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>array</code><p></p>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_secure"></a>
+                        <div class="element clickable method public  method_secure" data-toggle="collapse" data-target=".method_secure .collapse">
+                            <h2>Check if the request is secure.</h2>
+                            <pre>secure() : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if the request is secure or false on insecure.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_server"></a>
+                        <div class="element clickable method public  method_server" data-toggle="collapse" data-target=".method_server .collapse">
+                            <h2>Return an instance of the $_SERVER container.</h2>
+                            <pre>server() : \Imperium\Http\Parameters\Bag</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Http.Parameters.Bag.html">\Imperium\Http\Parameters\Bag</a></code><p></p>
                                                                     </div>
                             </div>
 
@@ -429,15 +646,15 @@
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_data"> </a>
-                            <div class="element clickable property  public property_data" data-toggle="collapse" data-target=".property_data .collapse">
-                                <h2>data</h2>
-                                <pre>data : array</pre>
+                                                    <a id="property_query"> </a>
+                            <div class="element clickable property  public property_query" data-toggle="collapse" data-target=".property_query .collapse">
+                                <h2>query</h2>
+                                <pre>query : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The uploaded files values.</p></div>
+                                        <div class="long_description"><p>The container for $_GET values.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -450,19 +667,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>array</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_buffer"> </a>
-                            <div class="element clickable property  public property_buffer" data-toggle="collapse" data-target=".property_buffer .collapse">
-                                <h2>buffer</h2>
-                                <pre>buffer : array</pre>
+                                                    <a id="property_request"> </a>
+                            <div class="element clickable property  public property_request" data-toggle="collapse" data-target=".property_request .collapse">
+                                <h2>request</h2>
+                                <pre>request : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The buffer values</p></div>
+                                        <div class="long_description"><p>The container for $_POST values.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -475,19 +692,19 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>array</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_sum"> </a>
-                            <div class="element clickable property  public property_sum" data-toggle="collapse" data-target=".property_sum .collapse">
-                                <h2>sum</h2>
-                                <pre>sum : integer</pre>
+                                                    <a id="property_cookie"> </a>
+                            <div class="element clickable property  public property_cookie" data-toggle="collapse" data-target=".property_cookie .collapse">
+                                <h2>cookie</h2>
+                                <pre>cookie : \Imperium\Http\Parameters\Bag</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>The sum of all uploaded files</p></div>
+                                        <div class="long_description"><p>The container for $_COOKIE values</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -500,19 +717,69 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>integer</code>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_server"> </a>
+                            <div class="element clickable property  public property_server" data-toggle="collapse" data-target=".property_server .collapse">
+                                <h2>server</h2>
+                                <pre>server : \Imperium\Http\Parameters\Bag</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The container for $_SERVER values.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_args"> </a>
+                            <div class="element clickable property  public property_args" data-toggle="collapse" data-target=".property_args .collapse">
+                                <h2>args</h2>
+                                <pre>args : \Imperium\Http\Parameters\Bag</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The container for the router params values.</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\Imperium\Http\Parameters\Bag</code>
                                                                             </div>
                                 </div>
                             </div>
                                                     <a id="property_files"> </a>
                             <div class="element clickable property  public property_files" data-toggle="collapse" data-target=".property_files .collapse">
                                 <h2>files</h2>
-                                <pre>files : array</pre>
+                                <pre>files : \Imperium\Http\Parameters\UploadedFile</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>All validate uploaded files.</p></div>
+                                        <div class="long_description"><p>The container for the uploaded files.</p></div>
 
                                         <table class="table">
                                                                                             <tr>
@@ -525,95 +792,20 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>array</code>
-                                                                            </div>
-                                </div>
-                            </div>
-                                                    <a id="property_types"> </a>
-                            <div class="element clickable property  public property_types" data-toggle="collapse" data-target=".property_types .collapse">
-                                <h2>types</h2>
-                                <pre>types : array</pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"><p>All validate uploaded files type.</p></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>array</code>
-                                                                            </div>
-                                </div>
-                            </div>
-                                                    <a id="property_sizes"> </a>
-                            <div class="element clickable property  public property_sizes" data-toggle="collapse" data-target=".property_sizes .collapse">
-                                <h2>sizes</h2>
-                                <pre>sizes : array</pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"><p>All validate uploaded files size.</p></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>array</code>
-                                                                            </div>
-                                </div>
-                            </div>
-                                                    <a id="property_errors"> </a>
-                            <div class="element clickable property  public property_errors" data-toggle="collapse" data-target=".property_errors .collapse">
-                                <h2>errors</h2>
-                                <pre>errors : array</pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"><p>All validate uploaded files errors.</p></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>array</code>
+                                            <code>\Imperium\Http\Parameters\UploadedFile</code>
                                                                             </div>
                                 </div>
                             </div>
                                                             </div>
             </div>
-            <a id="\Imperium\Http\Parameters\UploadedFile"></a>
+            <a id="\Imperium\Http\Request\Request"></a>
             <ul class="breadcrumb">
                 <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
                     
     
-    <li><span class="divider">\</span><a href="../namespaces/Imperium.Http.Parameters.html">Parameters</a></li>
+    <li><span class="divider">\</span><a href="../namespaces/Imperium.Http.Request.html">Request</a></li>
 
-                <li class="active"><span class="divider">\</span><a href="../classes/Imperium.Http.Parameters.UploadedFile.html">UploadedFile</a></li>
+                <li class="active"><span class="divider">\</span><a href="../classes/Imperium.Http.Request.Request.html">Request</a></li>
             </ul>
         </div>
     </div>
