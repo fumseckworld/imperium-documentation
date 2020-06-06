@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    imperium &raquo; \Imperium\Database\Model\Model
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">imperium</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Imperium.html">Imperium</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public inherited">
+        <a href="#method___construct" title="__construct :: Build a new instance">
+            <span class="description">Build a new instance</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_andColumn" title="andColumn :: Add on the where clause an and clause">
+            <span class="description">Add on the where clause an and clause</span><pre>andColumn</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_base" title="base :: Return the current base used.">
+            <span class="description">Return the current base used.</span><pre>base</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_between" title="between :: Undocumented function">
+            <span class="description">Undocumented function</span><pre>between</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_by" title="by :: Generate an order by clause">
+            <span class="description">Generate an order by clause</span><pre>by</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_columns" title="columns :: Return all columns inside a table.">
+            <span class="description">Return all columns inside a table.</span><pre>columns</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_create" title="create :: Create a new record.">
+            <span class="description">Create a new record.</span><pre>create</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_delete" title="delete :: Delete all records found by the executed query.">
+            <span class="description">Delete all records found by the executed query.</span><pre>delete</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_destroy" title="destroy :: Delete a record by this id.">
+            <span class="description">Delete a record by this id.</span><pre>destroy</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_different" title="different :: Get values different of the expected value.">
+            <span class="description">Get values different of the expected value.</span><pre>different</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_driver" title="driver :: Get the pdo driver used.">
+            <span class="description">Get the pdo driver used.</span><pre>driver</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_exec" title="exec :: Execute a query sql.">
+            <span class="description">Execute a query sql.</span><pre>exec</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_find" title="find :: Find a record by this identifier.">
+            <span class="description">Find a record by this identifier.</span><pre>find</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_from" title="from :: Select the table to manage">
+            <span class="description">Select the table to manage</span><pre>from</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_get" title="get :: Execute the query and return the results in an array.">
+            <span class="description">Execute the query and return the results in an array.</span><pre>get</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_hostname" title="hostname :: Return the current hostname used.">
+            <span class="description">Return the current hostname used.</span><pre>hostname</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_join" title="join :: Generate a join clause.">
+            <span class="description">Generate a join clause.</span><pre>join</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_like" title="like :: Generate a like clause">
+            <span class="description">Generate a like clause</span><pre>like</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_mysql" title="mysql :: Check if the current driver used is mysql.">
+            <span class="description">Check if the current driver used is mysql.</span><pre>mysql</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_not" title="not :: Generate a where clause where values are different of expected values.">
+            <span class="description">Generate a where clause where values are different of expected values.</span><pre>not</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_only" title="only :: Select the results columns.">
+            <span class="description">Select the results columns.</span><pre>only</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_orColumn" title="orColumn :: Add a or clause">
+            <span class="description">Add a or clause</span><pre>orColumn</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_paginate" title="paginate :: Paginate the results for a page.">
+            <span class="description">Paginate the results for a page.</span><pre>paginate</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_password" title="password :: Return the current password used.">
+            <span class="description">Return the current password used.</span><pre>password</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_postgresql" title="postgresql :: Check if the current driver used is postgresql.">
+            <span class="description">Check if the current driver used is postgresql.</span><pre>postgresql</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_primary" title="primary :: Get the primary key of the given table.">
+            <span class="description">Get the primary key of the given table.</span><pre>primary</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_results" title="results :: Return the query results">
+            <span class="description">Return the query results</span><pre>results</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_search" title="search :: Search a value inside a table.">
+            <span class="description">Search a value inside a table.</span><pre>search</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_sql" title="sql :: Return the sql query">
+            <span class="description">Return the sql query</span><pre>sql</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_sqlite" title="sqlite :: Check if the current driver used is sqlite.">
+            <span class="description">Check if the current driver used is sqlite.</span><pre>sqlite</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_take" title="take :: Add a limit">
+            <span class="description">Add a limit</span><pre>take</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_union" title="union :: Generate an union clause.">
+            <span class="description">Generate an union clause.</span><pre>union</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_update" title="update :: Update a record by this identifier.">
+            <span class="description">Update a record by this identifier.</span><pre>update</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_username" title="username :: Return the current username used.">
+            <span class="description">Return the current username used.</span><pre>username</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_where" title="where :: Add a where clause">
+            <span class="description">Add a where clause</span><pre>where</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_pdo" title="pdo :: Build the pdo instance.">
+                                <span class="description">Build the pdo instance.</span><pre>pdo</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                            <a href="#method_dev" title="dev :: Call the constructor with the development environment information.">
+                                <span class="description">Call the constructor with the development environment information.</span><pre>dev</pre>
+                            </a>
+                        </li>
+                                                                                                                                                        <li class="method private inherited">
+                            <a href="#method_env" title="env :: Get the correct environment.">
+                                <span class="description">Get the correct environment.</span><pre>env</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                            <a href="#method_prod" title="prod :: Call the constructor with the production environment information.">
+                                <span class="description">Call the constructor with the production environment information.</span><pre>prod</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                            <a href="#method_test" title="test :: Call the constructor with the test environment information.">
+                                <span class="description">Call the constructor with the test environment information.</span><pre>test</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Model</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a>
+                                                        </small>
+                <p class="short_description">Represent the core of all models.</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>This package contains all useful methods to manage a table content.</p>
+<p>It's the parent class of all model class.</p>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Willy Micieli <a href="mailto:fumseck@fumseck.org">fumseck@fumseck.org</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Imperium\Database\Model</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td>
+                                                                                    12
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Build a new instance</h2>
+                            <pre>__construct(string $driver = &#039;&#039;, string $base = &#039;&#039;, string $username = &#039;&#039;, string $password = &#039;&#039;, string $host = &#039;localhost&#039;) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                <span class="label">final</span>                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Initialize required values</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$driver</h4>
+                                                <code>string</code><p><p>The driver to use</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$base</h4>
+                                                <code>string</code><p><p>The database name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code>string</code><p><p>The database username</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$password</h4>
+                                                <code>string</code><p><p>The database password</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$host</h4>
+                                                <code>string</code><p><p>The database hostname</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_andColumn"></a>
+                        <div class="element clickable method public  method_andColumn inherited" data-toggle="collapse" data-target=".method_andColumn .collapse">
+                            <h2>Add on the where clause an and clause</h2>
+                            <pre>andColumn(string $column, string $condition, string $expected) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p><p>The column name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$condition</h4>
+                                                <code>string</code><p><p>The condition.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$expected</h4>
+                                                <code>string</code><p><p>The expected value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_base"></a>
+                        <div class="element clickable method public  method_base inherited" data-toggle="collapse" data-target=".method_base .collapse">
+                            <h2>Return the current base used.</h2>
+                            <pre>base() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_between"></a>
+                        <div class="element clickable method public  method_between inherited" data-toggle="collapse" data-target=".method_between .collapse">
+                            <h2>Undocumented function</h2>
+                            <pre>between(string $column, mixed $begin, mixed $end) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p><p>The column name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$begin</h4>
+                                                <code>mixed</code><p><p>The begin value.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$end</h4>
+                                                <code>mixed</code><p><p>The end value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_by"></a>
+                        <div class="element clickable method public  method_by inherited" data-toggle="collapse" data-target=".method_by .collapse">
+                            <h2>Generate an order by clause</h2>
+                            <pre>by(string $column, string $order = &#039;DESC&#039;) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p><p>The column to order results.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$order</h4>
+                                                <code>string</code><p><p>The order value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_columns"></a>
+                        <div class="element clickable method public  method_columns inherited" data-toggle="collapse" data-target=".method_columns .collapse">
+                            <h2>Return all columns inside a table.</h2>
+                            <pre>columns(string $table) : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>string</code><p><p>The tables to analyse.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_create"></a>
+                        <div class="element clickable method public  method_create" data-toggle="collapse" data-target=".method_create .collapse">
+                            <h2>Create a new record.</h2>
+                            <pre>create(array $values) : boolean</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$values</h4>
+                                                <code>array</code><p><p>The new record values.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_delete"></a>
+                        <div class="element clickable method public  method_delete inherited" data-toggle="collapse" data-target=".method_delete .collapse">
+                            <h2>Delete all records found by the executed query.</h2>
+                            <pre>delete() : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_destroy"></a>
+                        <div class="element clickable method public  method_destroy" data-toggle="collapse" data-target=".method_destroy .collapse">
+                            <h2>Delete a record by this id.</h2>
+                            <pre>destroy(string $table, integer $id) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>string</code><p><p>The table name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>integer</code><p><p>The record identifier to delete.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_dev"></a>
+                        <div class="element clickable method private  method_dev inherited" data-toggle="collapse" data-target=".method_dev .collapse">
+                            <h2>Call the constructor with the development environment information.</h2>
+                            <pre>dev() : \Imperium\Database\Connection\Connect</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Connection.Connect.html">\Imperium\Database\Connection\Connect</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_different"></a>
+                        <div class="element clickable method public  method_different" data-toggle="collapse" data-target=".method_different .collapse">
+                            <h2>Get values different of the expected value.</h2>
+                            <pre>different(string $column, mixed $expected) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p><p>The column name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$expected</h4>
+                                                <code>mixed</code><p><p>The expected value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_driver"></a>
+                        <div class="element clickable method public  method_driver inherited" data-toggle="collapse" data-target=".method_driver .collapse">
+                            <h2>Get the pdo driver used.</h2>
+                            <pre>driver() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_env"></a>
+                        <div class="element clickable method private  method_env inherited" data-toggle="collapse" data-target=".method_env .collapse">
+                            <h2>Get the correct environment.</h2>
+                            <pre>env() : \Imperium\Database\Connection\Connect</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\Imperium\Exception\Kedavra</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Connection.Connect.html">\Imperium\Database\Connection\Connect</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_exec"></a>
+                        <div class="element clickable method public  method_exec inherited" data-toggle="collapse" data-target=".method_exec .collapse">
+                            <h2>Execute a query sql.</h2>
+                            <pre>exec(string $sql, array $args = array()) : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true on success of false on failure.</p></div>
+
+                                    <table class="table">
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\Imperium\Exception\Kedavra</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sql</h4>
+                                                <code>string</code><p><p>The query to execute</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>array</code><p><p>The query args</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_find"></a>
+                        <div class="element clickable method public  method_find" data-toggle="collapse" data-target=".method_find .collapse">
+                            <h2>Find a record by this identifier.</h2>
+                            <pre>find(string $table, integer $id) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>string</code><p><p>The table name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>integer</code><p><p>The identifier.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_from"></a>
+                        <div class="element clickable method public  method_from inherited" data-toggle="collapse" data-target=".method_from .collapse">
+                            <h2>Select the table to manage</h2>
+                            <pre>from(string $table) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>string</code><p><p>The table name.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get"></a>
+                        <div class="element clickable method public  method_get inherited" data-toggle="collapse" data-target=".method_get .collapse">
+                            <h2>Execute the query and return the results in an array.</h2>
+                            <pre>get(string $sql, array $args = array(), integer $output_mode = \PDO::FETCH_OBJ) : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\Imperium\Exception\Kedavra</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sql</h4>
+                                                <code>string</code><p><p>The query to execute</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>array</code><p><p>The query arguments</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$output_mode</h4>
+                                                <code>integer</code><p><p>The output style</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_hostname"></a>
+                        <div class="element clickable method public  method_hostname inherited" data-toggle="collapse" data-target=".method_hostname .collapse">
+                            <h2>Return the current hostname used.</h2>
+                            <pre>hostname() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_join"></a>
+                        <div class="element clickable method public  method_join inherited" data-toggle="collapse" data-target=".method_join .collapse">
+                            <h2>Generate a join clause.</h2>
+                            <pre>join(string $condition, string $first_table, string $second_table, string $first_param, string $second_param, string $columns) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$condition</h4>
+                                                <code>string</code><p><p>The join condition.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$first_table</h4>
+                                                <code>string</code><p><p>The join first table name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$second_table</h4>
+                                                <code>string</code><p><p>The join second table name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$first_param</h4>
+                                                <code>string</code><p><p>The join first parameter.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$second_param</h4>
+                                                <code>string</code><p><p>The join second parameter.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$columns</h4>
+                                                <code>string</code><p><p>The columns to use.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_like"></a>
+                        <div class="element clickable method public  method_like inherited" data-toggle="collapse" data-target=".method_like .collapse">
+                            <h2>Generate a like clause</h2>
+                            <pre>like(mixed $value) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>The value to search.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_mysql"></a>
+                        <div class="element clickable method public  method_mysql inherited" data-toggle="collapse" data-target=".method_mysql .collapse">
+                            <h2>Check if the current driver used is mysql.</h2>
+                            <pre>mysql() : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if mysql is used or return false.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_not"></a>
+                        <div class="element clickable method public  method_not inherited" data-toggle="collapse" data-target=".method_not .collapse">
+                            <h2>Generate a where clause where values are different of expected values.</h2>
+                            <pre>not(string $column, mixed $values) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$values</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_only"></a>
+                        <div class="element clickable method public  method_only inherited" data-toggle="collapse" data-target=".method_only .collapse">
+                            <h2>Select the results columns.</h2>
+                            <pre>only(string $columns) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$columns</h4>
+                                                <code>string</code><p><p>The columns to take.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_orColumn"></a>
+                        <div class="element clickable method public  method_orColumn inherited" data-toggle="collapse" data-target=".method_orColumn .collapse">
+                            <h2>Add a or clause</h2>
+                            <pre>orColumn(string $column, string $condition, mixed $value) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p><p>The or column name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$condition</h4>
+                                                <code>string</code><p><p>The or condition.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>The expected value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_paginate"></a>
+                        <div class="element clickable method public  method_paginate" data-toggle="collapse" data-target=".method_paginate .collapse">
+                            <h2>Paginate the results for a page.</h2>
+                            <pre>paginate(\Closure $callback, integer $page, integer $limit) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$callback</h4>
+                                                <code>\Closure</code><p><p>The prepare output callback.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$page</h4>
+                                                <code>integer</code><p><p>The current page.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$limit</h4>
+                                                <code>integer</code><p><p>The limit per page.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_password"></a>
+                        <div class="element clickable method public  method_password inherited" data-toggle="collapse" data-target=".method_password .collapse">
+                            <h2>Return the current password used.</h2>
+                            <pre>password() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_pdo"></a>
+                        <div class="element clickable method protected  method_pdo inherited" data-toggle="collapse" data-target=".method_pdo .collapse">
+                            <h2>Build the pdo instance.</h2>
+                            <pre>pdo() : \PDO</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\PDO</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_postgresql"></a>
+                        <div class="element clickable method public  method_postgresql inherited" data-toggle="collapse" data-target=".method_postgresql .collapse">
+                            <h2>Check if the current driver used is postgresql.</h2>
+                            <pre>postgresql() : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if postgresql is used or return false.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_primary"></a>
+                        <div class="element clickable method public  method_primary inherited" data-toggle="collapse" data-target=".method_primary .collapse">
+                            <h2>Get the primary key of the given table.</h2>
+                            <pre>primary(string $table) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>\Imperium\Exception\Kedavra</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>string</code><p><p>The table name.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_prod"></a>
+                        <div class="element clickable method private  method_prod inherited" data-toggle="collapse" data-target=".method_prod .collapse">
+                            <h2>Call the constructor with the production environment information.</h2>
+                            <pre>prod() : \Imperium\Database\Connection\Connect</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Connection.Connect.html">\Imperium\Database\Connection\Connect</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_results"></a>
+                        <div class="element clickable method public  method_results inherited" data-toggle="collapse" data-target=".method_results .collapse">
+                            <h2>Return the query results</h2>
+                            <pre>results() : array</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_search"></a>
+                        <div class="element clickable method public  method_search" data-toggle="collapse" data-target=".method_search .collapse">
+                            <h2>Search a value inside a table.</h2>
+                            <pre>search(string $table, mixed $value) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>string</code><p><p>The table to analyse.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>The value to search.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sql"></a>
+                        <div class="element clickable method public  method_sql inherited" data-toggle="collapse" data-target=".method_sql .collapse">
+                            <h2>Return the sql query</h2>
+                            <pre>sql() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sqlite"></a>
+                        <div class="element clickable method public  method_sqlite inherited" data-toggle="collapse" data-target=".method_sqlite .collapse">
+                            <h2>Check if the current driver used is sqlite.</h2>
+                            <pre>sqlite() : boolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Return true if sqlite is used or return false.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_take"></a>
+                        <div class="element clickable method public  method_take inherited" data-toggle="collapse" data-target=".method_take .collapse">
+                            <h2>Add a limit</h2>
+                            <pre>take(integer $limit, integer $offset) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$limit</h4>
+                                                <code>integer</code><p><p>The limit value.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p><p>The limit offset.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_test"></a>
+                        <div class="element clickable method private  method_test inherited" data-toggle="collapse" data-target=".method_test .collapse">
+                            <h2>Call the constructor with the test environment information.</h2>
+                            <pre>test() : \Imperium\Database\Connection\Connect</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Connection.Connect.html">\Imperium\Database\Connection\Connect</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_union"></a>
+                        <div class="element clickable method public  method_union inherited" data-toggle="collapse" data-target=".method_union .collapse">
+                            <h2>Generate an union clause.</h2>
+                            <pre>union(string $first_table, string $second_table, string $first_column, string $second_column) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$first_table</h4>
+                                                <code>string</code><p><p>The first table name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$second_table</h4>
+                                                <code>string</code><p><p>The second table name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$first_column</h4>
+                                                <code>string</code><p><p>The first column name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$second_column</h4>
+                                                <code>string</code><p><p>The second column name.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_update"></a>
+                        <div class="element clickable method public  method_update" data-toggle="collapse" data-target=".method_update .collapse">
+                            <h2>Update a record by this identifier.</h2>
+                            <pre>update(integer $id, array $values) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>integer</code><p><p>The record identifier to update.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$values</h4>
+                                                <code>array</code><p><p>The new record values.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_username"></a>
+                        <div class="element clickable method public  method_username inherited" data-toggle="collapse" data-target=".method_username .collapse">
+                            <h2>Return the current username used.</h2>
+                            <pre>username() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_where"></a>
+                        <div class="element clickable method public  method_where inherited" data-toggle="collapse" data-target=".method_where .collapse">
+                            <h2>Add a where clause</h2>
+                            <pre>where(string $column, string $condition, mixed $value) : \Imperium\Database\Query\Sql</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$column</h4>
+                                                <code>string</code><p><p>The where column.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$condition</h4>
+                                                <code>string</code><p><p>The where condition.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>The expected value.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/Imperium.Database.Query.Sql.html">\Imperium\Database\Query\Sql</a></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_driver"> </a>
+                            <div class="element clickable property  public property_driver inherited" data-toggle="collapse" data-target=".property_driver .collapse">
+                                <h2>driver</h2>
+                                <pre>driver : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The current pdo driver value</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_base"> </a>
+                            <div class="element clickable property  public property_base inherited" data-toggle="collapse" data-target=".property_base .collapse">
+                                <h2>base</h2>
+                                <pre>base : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The current pdo database value</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_username"> </a>
+                            <div class="element clickable property  public property_username inherited" data-toggle="collapse" data-target=".property_username .collapse">
+                                <h2>username</h2>
+                                <pre>username : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The current pdo username value</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_password"> </a>
+                            <div class="element clickable property  public property_password inherited" data-toggle="collapse" data-target=".property_password .collapse">
+                                <h2>password</h2>
+                                <pre>password : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The current pdo password value</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_host"> </a>
+                            <div class="element clickable property  public property_host inherited" data-toggle="collapse" data-target=".property_host .collapse">
+                                <h2>host</h2>
+                                <pre>host : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The current pdo hostname value</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pdo"> </a>
+                            <div class="element clickable property  public property_pdo inherited" data-toggle="collapse" data-target=".property_pdo .collapse">
+                                <h2>pdo</h2>
+                                <pre>pdo : \Imperium\Database\Connection\?PDO</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The pdo instance</p></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\Imperium\Database\Connection\?PDO</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Imperium\Database\Model\Model"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Imperium.Database.Model.html">Model</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Imperium.Database.Model.Model.html">Model</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sat, 06 Jun 2020 16:33:40 +0000.<br/>
+    </footer>
+    </body>
+</html>
